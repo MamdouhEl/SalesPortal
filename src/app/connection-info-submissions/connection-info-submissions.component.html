@@ -1,0 +1,45 @@
+<div class="container">
+  <br>
+  <!-- <form>
+      <div class="form-group">
+          <div class="input-group">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              <input type="text" class="form-control" name="searchString" placeholder="Type to search..." [(ngModel)]="searchString">
+          </div>
+      </div>
+  </form> -->
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Information</th>
+        <th>Status</th>
+        <th>Add Points</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let post of newContact" >
+      <tr>
+        <th><strong>Submitter: </strong>{{ post.Submitter }} <br><strong>Id:</strong> {{ post.id }} <br> <strong>Customer: </strong> {{ post.Customer }} <br> <strong>ContactEmail: </strong> {{ post.ContactEmail }} <br> <strong>Contact Name: </strong> {{ post.ContactName }} <br> <strong>Contact Phone: </strong> {{ post.ContactPhone }} <br> <strong>Comment: </strong> {{ post.Comment }} <br> <strong>Position: </strong> {{ post.ContactPosition }} <br> <strong>Date: </strong> {{ post.Date }}</th>
+        <th>{{ post.Status }},<br> {{ post.Points }} points</th>
+        <th> <select id="pointing" class="form-control" ngModel name="pointing" #points required>
+          <option>0</option>
+          <option>1</option>
+          <option>5</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+          <option>50</option>
+          <option>100</option>
+          <option>200</option>
+          <!-- <option ngValue="Customer">Customer2</option> -->
+        </select></th>
+        <button class="btn btn-primary" (click)="onAccept(points.value, post.id, post.Points, post.Submitter); points.value=''">Accept Submission</button> <br> <br>
+        <button class="btn btn-primary" (click)="onAccept('-1', post.id, post.Points, post.Submitter)">Return</button>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-primary" (click)="exportAsXLSX()"> Export</button>
+
+
+</div>

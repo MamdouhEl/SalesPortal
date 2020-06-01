@@ -1,0 +1,51 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+h5{
+  text-align: right;
+}
+
+p{
+  text-align: right;
+  /* padding-right: 50pt; */
+  /* color: white; */
+}
+
+a {
+  margin-top: 0 auto;
+  /* color: #FFF; */
+}
+
+.active {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+p:active {
+  color: black;
+}
+
+li:active {
+  color:brown;
+  resize: both;
+  overflow: auto;
+}
+
+.container-fluid{
+  background-image: url("../../assets/img/Header2.png");
+  height: 120pt;
+  /* width: 100%; */
+  background-size: 100%;
+  /* background-size: inherit; */
+  /* resize: both; */
+  overflow: auto;
+  background-repeat: no-repeat;
+  /* object-fit: fill; */
+}
+.navbar > .container-fluid > .nav.navbar-nav.navbar-right > li > a, .navbar > .container-fluid > .nav.navbar-nav.navbar-right {margin-top: 20pt }
+.navbar > .container-fluid > .nav.navbar-nav.navbar-right > li > a:hover, .navbar > .container-fluid > .nav.navbar-nav.navbar-right > li.active > a { background-color:tan }
+.navbar > .container-fluid > .nav.navbar-nav.navbar-right > li > a {color: white}

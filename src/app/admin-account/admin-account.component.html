@@ -1,0 +1,106 @@
+
+<!-- <div class="container"> -->
+  <br>
+  <!-- <form>
+      <div class="form-group">
+          <div class="input-group">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              <input type="text" class="form-control" name="searchString" placeholder="Type to search..." [(ngModel)]="searchString">
+          </div>
+      </div>
+  </form> -->
+
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <div > -->
+
+    <div class="w3-row">
+      <a routerLink="/AdminAccount/newSubmissions">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">New Customers</div>
+      </a>
+      <a routerLink="/AdminAccount/existSubmissions">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Existing Customers</div>
+      </a>
+      <a routerLink="/AdminAccount/connectionSubmissions">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Add Connection info</div>
+      </a>
+    </div>
+
+
+    <router-outlet></router-outlet>
+
+  <!-- </div> -->
+
+  <div class="form-group">
+      <label for="AddMem">Add new Customer</label>
+      <input type="text" id="NewCustomer" class="form-control" #Customer>
+  </div>
+  <div class="add">
+      <button class="btn btn-primary" (click)="addCustomer(Customer.value); Customer.value=''">Add</button>
+  </div>
+  <div class="form-group">
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let customer of Customers">
+              <tr
+              selection-model
+              selection-model-type="'checkbox'"
+              selection-model-mode="'multiple-additive'"
+              selection-model-selected-class="'foobar'">
+              <th><input type="checkbox" name="customer" (change)="updateCheckedCustomers(customer.Customername, $event)"> {{ customer.Customername }}</th>
+              <br>
+            </tr>
+
+          </tbody>
+        </table>
+        <button class="btn btn-danger" (click)="removeCustomer();">Remove</button>
+    </div>
+
+  <br>
+  <br>
+  <div class="form-group">
+      <label for="AddAdmin">Add Admin User</label>
+      <input type="text" id="AddAdmin" class="form-control" #User>
+  </div>
+  <div class="add">
+      <button class="btn btn-primary" (click)="addAdmin(User.value); User.value=''">Add</button>
+  </div>
+
+  <div class="form-group">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let admin of Admins">
+            <tr
+            selection-model
+            selection-model-type="'checkbox'"
+            selection-model-mode="'multiple-additive'"
+            selection-model-selected-class="'foobar'">
+            <th><input type="checkbox" name="admin" (change)="updateCheckedOptions(admin.Username, $event)"> {{ admin.Username }}</th>
+            <br>
+          </tr>
+
+        </tbody>
+      </table>
+      <button class="btn btn-danger" (click)="removeAdmin();">Remove</button>
+  </div>
+
+
+  <br>
+  <br>
+  <div class="back">
+      <button class="btn btn-primary" (click)="onBackClick()">Back</button>
+  </div>
+<!-- </div> -->

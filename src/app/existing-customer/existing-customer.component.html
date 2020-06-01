@@ -1,0 +1,82 @@
+<app-alert *ngIf="ShowDisclaimer" (close)="onDisclaimer()" style="position: center"></app-alert>
+<p><strong> *When dealing with a customer recently, you were able to spot an opportunity and informed the customer that you would let a sales Rep contact them</strong></p>
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+          <div id="user-data">
+
+              <div class="form-group">
+
+                <label for="CompanyName">Customer Company Name</label>
+                <input type="text" id="CompanyName" class="form-control"
+                ngModel
+                name="CompanyName" required placeholder="Enter Company Name">
+
+              </div>
+
+            <div class="form-group">
+              <label for="ContactName">Contact Name</label>
+              <input type="text" id="ContactName" class="form-control" ngModel
+              name="ContactName" required>
+            </div>
+            <div class="form-group">
+              <label for="CustomerPhone">Customer Phone</label>
+              <input type="number" id="CustomerPhone" class="form-control" ngModel
+              name="ContactPhone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Customer Email</label>
+              <input type="email" id="email" class="form-control" ngModel
+              name="ContactEmail" required email
+              #email="ngModel">
+              <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+            </div>
+            <div class="form-group">
+              <label for="ContactPosition">Contact Position</label>
+              <input type="text" id="ContactPosition" class="form-control" ngModel
+              name="ContactPosition" required>
+            </div>
+            <div class="form-group">
+              <label for="Description">Description</label>
+              <input type="text" maxlength="150" id="Description" class="form-control" ngModel
+              name="Description">
+            </div>
+            <div class="form-group">
+              <label for="Product">Product</label>
+              <input type="text" id="Product" class="form-control" ngModel name="Product" required>
+            </div>
+
+            <div  selection-model
+            selection-model-type="'checkbox'"
+            selection-model-mode="'multiple-additive'"
+            selection-model-selected-class="'foobar'">
+              <input type="checkbox" name="Approve" (change)="approve = !approve" ngModel required> Approval (Customer agreed to be contacted by Dell Sales)<br>
+                  <!-- <span class="focus-input100"></span> -->
+            </div>
+
+            <div  selection-model
+            selection-model-type="'checkbox'"
+            selection-model-mode="'multiple-additive'"
+            selection-model-selected-class="'foobar'">
+              <input type="checkbox" name="Accept" (change)="Accept = !Accept" ngModel required> Accept <button class="ButtonLink" (click)=onView()> Terms and Conditions</button><br>
+                  <!-- <span class="focus-input100"></span> -->
+            </div>
+
+                <p></p>
+
+          </div>
+          <br>
+          <div class="submit">
+            <button class="btn btn-primary" type="submit" [disabled]="!f.valid || !approve">Submit</button>
+         </div>
+         <div class="back">
+            <button class="btn btn-primary" (click)="onBackClick2()">Back</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>

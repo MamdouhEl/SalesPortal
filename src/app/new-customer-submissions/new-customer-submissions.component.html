@@ -1,0 +1,43 @@
+<div class="container">
+  <br>
+  <form>
+      <div class="form-group">
+          <div class="input-group">
+              <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+              <input type="text" class="form-control" name="searchString" placeholder="Type to search..." [(ngModel)]="searchString">
+          </div>
+      </div>
+  </form>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Information</th>
+        <th>Status</th>
+        <th>Add Points</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let post of newCust | filter : 'Information' : searchString; let i = index" >
+      <tr>
+        <th>Submitter: {{ post.Submitter }}<br> Id: {{ post.id }}<br> Company Name: {{ post.CompanyName }}<br> Contact Email: {{ post.ContactEmail }}<br> Contact Name: {{ post.ContactName }}<br> Contact Phone: {{ post.ContactPhone }}<br> Description: {{ post.Description }}<br> Product: {{ post.Product }} <br> <strong>Date: </strong> {{ post.Date }}</th>
+        <th>{{ post.Status }},<br> {{ post.Points }} points</th>
+        <th> <select id="pointing" class="form-control" ngModel name="pointing" #points required>
+            <option>0</option>
+            <option>1</option>
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>50</option>
+            <option>100</option>
+            <option>200</option>
+            <!-- <option ngValue="Customer">Customer2</option> -->
+          </select> </th>
+        <button class="btn btn-primary" (click)="onAccept(points.value, post.id, post.Points); points.value=''">Accept Submission</button> <br> <br>
+        <button class="btn btn-primary" (click)="onAccept('-1', post.id, post.Points)">Return</button>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-primary" (click)="exportAsXLSX()"> Export</button>
+</div>

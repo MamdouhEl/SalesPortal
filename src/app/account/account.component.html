@@ -1,0 +1,147 @@
+
+<div class="container">
+    <div class="points">
+        <label for="Points" sum="this.sum">Points = {{ sum }} </label>
+    </div>
+  <br>
+  <br>
+  <br>
+  <form>
+    <label for="Existing Customer Submissions">Opportunities: Existing Customers</label>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Submission ID</th>
+        <th>Date</th>
+        <th>Info</th>
+        <th>Status</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let post of exists; let i = index">
+
+          <tr>
+
+              <th > {{ post.id }} </th>
+              <th> {{ post.Date }} </th>
+              <th style="text-align:left" *ngIf ="post.Status !== 'Returned'" type="button" class="btn btn-outline-primary" (click)="isCollapsed[i] = !isCollapsed[i]"
+                          [attr.aria-expanded]="!isCollapsed[i]" aria-controls="collapseExample">
+                          <strong>Company:</strong>  {{ post.CompanyName }} <br>
+                          <strong>Contact Name:</strong> {{ post.ContactName }}<br>
+                          <strong>Product:</strong> {{ post.Product }}
+
+
+                <div id="collapseExample" [ngbCollapse]="isCollapsed[i]">
+                  <div class="card">
+                    <div class="card-body">
+                        <strong>Description:</strong> {{ post.Description }}
+                    </div>
+                  </div>
+                </div>
+              </th>
+                <th *ngIf ='post.Status === "Returned"'> <label for="CompanyName">Company Name</label> <input #CompanyName type="text" class="form-control" name="CompanyName" value="{{ post.CompanyName }}" required><br>
+                   <label for="ContactName">Contact Name</label><input #ContactName type="text" class="form-control" name="ContactName" value="{{ post.ContactName }}" required><br>
+                   <label for="ContactPhone">ContactPhone</label> <input #ContactPhone type="text" class="form-control" name="ContactPhone" value=" {{ post.ContactPhone }}" required> <br>
+                   <label for="ContactEmail">ContactEmail</label> <input #ContactEmail type="text" class="form-control" name="ContactEmail" value=" {{ post.ContactEmail }}" required> <br>
+                   <label for="ContactPosition">ContactPosition</label> <input #ContactPosition type="text" class="form-control" name="ContactPosition" value=" {{ post.ContactPosition }}" required> <br>
+                   <label for="Product">Product</label> <input #Product type="text" class="form-control" name="Product" value=" {{ post.Product }}" required> <br> <label for="description">Description</label><br>
+                    <input #Description type="text" name="Description" value="{{ post.Description }}" required>
+                  <br><br><button class="btn btn-primary" (click)="ResubmitExist(post.id, CompanyName.value, ContactName.value, ContactPhone.value, ContactEmail.value, ContactPosition.value, Product.value, Description.value)">Resubmit</button></th>
+              <th> {{ post.Status }} </th>
+              <th> {{ post.Points }} </th>
+            </tr>
+
+      </tbody>
+    </table>
+    <label for="New Contact Submissions">New Contact Submissions</label>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>Submission ID</th>
+            <th>Date</th>
+            <th>Info</th>
+            <th>Status</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+      <tbody *ngFor="let post of newContact; let i = index">
+
+        <tr>
+
+            <th > {{ post.id }} </th>
+            <th> {{ post.Date }}</th>
+            <th style="text-align:left" *ngIf ="post.Status !== 'Returned'" type="button" class="btn btn-outline-primary" (click)="isCollapsed[i] = !isCollapsed[i]"
+                        [attr.aria-expanded]="!isCollapsed[i]" aria-controls="collapseExample">
+                        <strong>Customer:</strong>  {{ post.Customer }}<br> <strong>Contact Name:</strong>  {{ post.ContactName }}<br> <strong>Contact Position:</strong>  {{ post.ContactPosition }}
+
+
+              <div id="collapseExample" [ngbCollapse]="isCollapsed[i]">
+                <div class="card">
+                  <div class="card-body">
+                      <strong>Description:</strong>  {{ post.Comment }}
+                  </div>
+                </div>
+              </div>
+            </th>
+              <th *ngIf ="post.Status === 'Returned'"> <label for="CompanyName">Company Name</label> <input #CompanyName type="text" class="form-control" name="CompanyName" value="{{ post.Customer }}" required><br>
+                 <label for="ContactName"><b>Contact Name</b> </label><input #ContactName type="text" class="form-control" name="ContactName" value="{{ post.ContactName }}" required><br>
+                 <label for="ContactPhone">ContactPhone</label> <input #ContactPhone type="text" class="form-control" name="ContactPhone" value=" {{ post.ContactPhone }}" required> <br>
+                 <label for="ContactEmail">ContactEmail</label> <input #ContactEmail type="text" class="form-control" name="ContactEmail" value=" {{ post.ContactEmail }}" required> <br>
+                 <label for="Postion">Position</label> <input #Position type="text" class="form-control" name="Position" value=" {{ post.ContactPosition }}" required> <br> <label for="description">Description</label><br>
+                  <input #Description type="text" name="Description" value="{{ post.Comment }}" required>
+                <br><br><button class="btn btn-primary" (click)="ResubmitContact(post.id, CompanyName.value, ContactName.value, ContactPhone.value, ContactEmail.value, Position.value, Description.value)">Resubmit</button></th>
+            <th> {{ post.Status }} </th>
+            <th> {{ post.Points }} </th>
+          </tr>
+
+    </tbody>
+  </table>
+  <label for="New Customer Submissions">Opportunities New Customers</label>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th>Submission ID</th>
+            <th>Date</th>
+            <th>Info</th>
+            <th>Status</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+    <tbody *ngFor="let post of newCustomer; let i = index">
+
+      <tr>
+
+          <th > {{ post.id }} </th>
+          <th> {{post.Date}} </th>
+          <th style="text-align:left" *ngIf ="post.Status !== 'Returned'" type="button" class="btn btn-outline-primary" (click)="isCollapsed[i] = !isCollapsed[i]"
+                      [attr.aria-expanded]="!isCollapsed[i]" aria-controls="collapseExample">
+                      <strong>Company Name:</strong>  {{ post.CompanyName }}<br> <strong>Contact Name:</strong> {{ post.ContactName }}<br> <strong>Contact Email:</strong> {{ post.ContactEmail }}
+
+
+            <div id="collapseExample" [ngbCollapse]="isCollapsed[i]">
+              <div class="card">
+                <div class="card-body">
+                    <strong>Description:</strong>  {{ post.Description }}
+                </div>
+              </div>
+            </div>
+          </th>
+            <th *ngIf ="post.Status === 'Returned'"> <label for="CompanyName">Company Name</label> <input #CompanyName type="text" class="form-control" name="CompanyName" value="{{ post.CompanyName }}" required><br>
+               <label for="ContactName">Contact Name</label><input #ContactName type="text" class="form-control" name="ContactName" value="{{ post.ContactName }}" required><br>
+               <label for="ContactPhone">ContactPhone</label> <input #ContactPhone type="text" class="form-control" name="ContactPhone" value=" {{ post.ContactPhone }}" required> <br>
+               <label for="ContactEmail">ContactEmail</label> <input #ContactEmail type="text" class="form-control" name="ContactEmail" value=" {{ post.ContactEmail }}" required> <br>
+               <label for="ContactPhone">ContactPhone</label> <input #Product type="text" class="form-control" name="ContactPhone" value=" {{ post.ContactPhone }}" required> <br> <label for="description">Description</label><br>
+                <input #Description type="text" name="Description" value="{{ post.Description }}" required>
+              <br><br><button class="btn btn-primary" (click)="ResubmitNew(post.id, CompanyName.value, ContactName.value, ContactPhone.value, ContactEmail.value, Product.value, Description.value)">Resubmit</button></th>
+          <th> {{ post.Status }} </th>
+          <th> {{ post.Points }} </th>
+        </tr>
+
+  </tbody>
+  </table>
+  </form>
+
+  <div class="back">
+      <button class="btn btn-primary" (click)="onBackClick()">Back</button>
+  </div>
+</div>

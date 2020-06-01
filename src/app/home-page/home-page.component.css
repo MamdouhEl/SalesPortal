@@ -1,0 +1,79 @@
+.boxed{
+    position: relative;
+    /* background-color: gainsboro; */
+    /* margin:0 auto; */
+    /* padding: 0; */
+    text-align: center;
+
+}
+
+.row{
+  position: inherit;
+}
+
+.container{
+    position: relative;
+    margin-left: 0 auto;
+    margin:0 auto;
+    display: table;
+    text-justify: newspaper;
+
+}
+.card{
+  padding: 10%;
+}
+.card-footer{
+    padding: 3%;
+}
+.card-body{
+
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.columnsset{
+  margin-top: 10% auto;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+img:hover{
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+.column {
+  float: none;
+  width: 30%;
+  padding: 0 10px;
+  display:inline-block;
+}
+.row {
+  /* margin: 0 auto; Added */
+  float: center; /* Added */
+  /* margin-bottom: 10px; Added */
+}
+app-alert {
+  white-space: pre-wrap;
+}
+app-alert {
+  padding-bottom: 100px;
+}
+

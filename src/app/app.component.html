@@ -1,0 +1,9 @@
+<app-header></app-header>
+<p *ngIf="userIsAuthenticated && userIsAdmin" style='font-weight: bold; color: black; text-align: right;padding-right: 140pt'>Admin</p>
+      <p *ngIf="userIsAuthenticated" style='color:black; text-align: right; padding-right: 80pt'>Logged in as {{ authService.username }}</p>
+  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+
+    <router-outlet></router-outlet>
+  </div>
+
+<app-footer></app-footer>

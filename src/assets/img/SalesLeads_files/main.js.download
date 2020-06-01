@@ -1,0 +1,837 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./src/app/about/about.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/about/about.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Fib3V0L2Fib3V0LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/about/about.component.html":
+/*!********************************************!*\
+  !*** ./src/app/about/about.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  about works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/about/about.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/about/about.component.ts ***!
+  \******************************************/
+/*! exports provided: AboutComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutComponent", function() { return AboutComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AboutComponent = /** @class */ (function () {
+    function AboutComponent() {
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    AboutComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-about',
+            template: __webpack_require__(/*! ./about.component.html */ "./src/app/about/about.component.html"),
+            styles: [__webpack_require__(/*! ./about.component.css */ "./src/app/about/about.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutComponent);
+    return AboutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/account/account.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/account/account.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".points{\r\n    margin-left: 80%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWNjb3VudC9hY2NvdW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7Q0FDcEIiLCJmaWxlIjoic3JjL2FwcC9hY2NvdW50L2FjY291bnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wb2ludHN7XHJcbiAgICBtYXJnaW4tbGVmdDogODAlO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/account/account.component.html":
+/*!************************************************!*\
+  !*** ./src/app/account/account.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class=\"container\">\n    <div class=\"points\">\n        <label for=\"Points\">Points</label>\n        <output name=\"x\" for=\"a b\"></output>\n    </div>\n  <br>\n  <br>\n  <br>\n<table class=\"table table-striped\">\n    <thead>\n      <tr>\n        <th>Submission #</th>\n        <th>Date</th>\n        <th>Info</th>\n        <th>Status</th>\n        <th>Points</th>\n      </tr>\n    </thead>\n    <tbody>\n    </tbody>\n  </table>\n  <div class=\"back\">\n      <button class=\"btn btn-primary\" (click)=\"onBackClick()\">Back</button>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/account/account.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/account/account.component.ts ***!
+  \**********************************************/
+/*! exports provided: AccountComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccountComponent", function() { return AccountComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AccountComponent = /** @class */ (function () {
+    function AccountComponent(router) {
+        this.router = router;
+    }
+    AccountComponent.prototype.ngOnInit = function () {
+    };
+    AccountComponent.prototype.onBackClick = function () {
+        this.router.navigate(["/"]);
+    };
+    AccountComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-account',
+            template: __webpack_require__(/*! ./account.component.html */ "./src/app/account/account.component.html"),
+            styles: [__webpack_require__(/*! ./account.component.css */ "./src/app/account/account.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], AccountComponent);
+    return AccountComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/admin-account/admin-account.component.css":
+/*!***********************************************************!*\
+  !*** ./src/app/admin-account/admin-account.component.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".points{\r\n    margin-left: 80%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWRtaW4tYWNjb3VudC9hZG1pbi1hY2NvdW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7Q0FDcEIiLCJmaWxlIjoic3JjL2FwcC9hZG1pbi1hY2NvdW50L2FkbWluLWFjY291bnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wb2ludHN7XHJcbiAgICBtYXJnaW4tbGVmdDogODAlO1xyXG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/admin-account/admin-account.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/admin-account/admin-account.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class=\"container\">\n  <br>\n<table class=\"table table-striped\">\n    <thead>\n      <tr>\n        <th>Information</th>\n        <th>Status</th>\n        <th>Points</th>\n      </tr>\n    </thead>\n    <tbody>\n    </tbody>\n  </table>\n  <div class=\"form-group\">\n      <label for=\"AddMem\">Add new Customer</label>\n      <input type=\"text\" id=\"NewCustomer\" class=\"form-control\">\n  </div>\n  <div class=\"add\">\n      <button class=\"btn btn-primary\">Add</button>\n  </div>\n  <div class=\"form-group\">\n      <label for=\"RemoveMem\">Remove Customer</label>\n      <input type=\"text\" id=\"Remove\" class=\"form-control\">\n  </div>\n  <div class=\"remove\">\n      <button class=\"btn btn-primary\">Remove</button>\n  </div>\n  <br>\n  <br>\n  <div class=\"form-group\">\n      <label for=\"AddAdmin\">Add Admin User</label>\n      <input type=\"text\" id=\"AddAdmin\" class=\"form-control\">\n  </div>\n  <div class=\"add\">\n      <button class=\"btn btn-primary\">Add</button>\n  </div>\n  <div class=\"form-group\">\n      <label for=\"RemoveAdmin\">Remove Admin User</label>\n      <input type=\"text\" id=\"RemoveAdmin\" class=\"form-control\">\n  </div>\n  <div class=\"remove\">\n      <button class=\"btn btn-primary\">Remove</button>\n  </div>\n  <br>\n  <br>\n  <div class=\"back\">\n      <button class=\"btn btn-primary\">Back</button>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/admin-account/admin-account.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/admin-account/admin-account.component.ts ***!
+  \**********************************************************/
+/*! exports provided: AdminAccountComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminAccountComponent", function() { return AdminAccountComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AdminAccountComponent = /** @class */ (function () {
+    function AdminAccountComponent() {
+    }
+    AdminAccountComponent.prototype.ngOnInit = function () {
+    };
+    AdminAccountComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-admin-account',
+            template: __webpack_require__(/*! ./admin-account.component.html */ "./src/app/admin-account/admin-account.component.html"),
+            styles: [__webpack_require__(/*! ./admin-account.component.css */ "./src/app/admin-account/admin-account.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AdminAccountComponent);
+    return AdminAccountComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var routes = [];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/app.component.html":
+/*!************************************!*\
+  !*** ./src/app/app.component.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-header></app-header>\n<div class=\"row\">\n  <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n    <router-outlet></router-outlet>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'SalesLeads';
+    }
+    AppComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+        })
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/home-page/home-page.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _existing_customer_existing_customer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./existing-customer/existing-customer.component */ "./src/app/existing-customer/existing-customer.component.ts");
+/* harmony import */ var _new_customer_new_customer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./new-customer/new-customer.component */ "./src/app/new-customer/new-customer.component.ts");
+/* harmony import */ var _contact_info_contact_info_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./contact-info/contact-info.component */ "./src/app/contact-info/contact-info.component.ts");
+/* harmony import */ var _account_account_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./account/account.component */ "./src/app/account/account.component.ts");
+/* harmony import */ var _admin_account_admin_account_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./admin-account/admin-account.component */ "./src/app/admin-account/admin-account.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+var appRoutes = [
+    { path: '', component: _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__["HomePageComponent"] },
+    { path: 'NewCustomer', component: _new_customer_new_customer_component__WEBPACK_IMPORTED_MODULE_7__["NewCustomerComponent"] },
+    { path: 'ExistingCustomer', component: _existing_customer_existing_customer_component__WEBPACK_IMPORTED_MODULE_6__["ExistingCustomerComponent"] },
+    { path: 'ContactInfo', component: _contact_info_contact_info_component__WEBPACK_IMPORTED_MODULE_8__["ContactInfoComponent"] },
+    { path: 'Account', component: _account_account_component__WEBPACK_IMPORTED_MODULE_9__["AccountComponent"] },
+    { path: 'AdminAccount', component: _admin_account_admin_account_component__WEBPACK_IMPORTED_MODULE_10__["AdminAccountComponent"] },
+    { path: 'About', component: _about_about_component__WEBPACK_IMPORTED_MODULE_12__["AboutComponent"] },
+];
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__["HomePageComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
+                _existing_customer_existing_customer_component__WEBPACK_IMPORTED_MODULE_6__["ExistingCustomerComponent"],
+                _new_customer_new_customer_component__WEBPACK_IMPORTED_MODULE_7__["NewCustomerComponent"],
+                _contact_info_contact_info_component__WEBPACK_IMPORTED_MODULE_8__["ContactInfoComponent"],
+                _account_account_component__WEBPACK_IMPORTED_MODULE_9__["AccountComponent"],
+                _admin_account_admin_account_component__WEBPACK_IMPORTED_MODULE_10__["AdminAccountComponent"],
+                _about_about_component__WEBPACK_IMPORTED_MODULE_12__["AboutComponent"]
+            ],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterModule"].forRoot(appRoutes)
+            ],
+            providers: [],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/contact-info/contact-info.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/contact-info/contact-info.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".submit{\r\n    position: absolute;\r\n    left: 80%;\r\n}\r\n\r\n.back{\r\n    position: absolute;\r\n    left: 10%\r\n}\r\n\r\n.p1{\r\n    text-align: center;\r\n    font-size: 20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGFjdC1pbmZvL2NvbnRhY3QtaW5mby5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksbUJBQW1CO0lBQ25CLFVBQVU7Q0FDYjs7QUFFRDtJQUNJLG1CQUFtQjtJQUNuQixTQUFTO0NBQ1o7O0FBQ0Q7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0NBQ25CIiwiZmlsZSI6InNyYy9hcHAvY29udGFjdC1pbmZvL2NvbnRhY3QtaW5mby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnN1Ym1pdHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDgwJTtcclxufVxyXG5cclxuLmJhY2t7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAxMCVcclxufVxyXG4ucDF7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/contact-info/contact-info.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/contact-info/contact-info.component.html ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p class=\"p1\"><strong> *Please select a customer from the dropdown list and share any contacts you may have</strong></p>\n<br>\n<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n        <form>\n            <div class=\"form-group\">\n                <label for=\"Customers\">Customers list</label>\n                <select id=\"Customers\" class=\"form-control\">\n                  <option value=\"\">Customer1</option>\n                  <option value=\"\">Customer2</option>\n                </select>\n              </div>\n          <div id=\"user-data\">\n              <div class=\"form-group\">\n                <label for=\"CompanyName\">Full Contact Name</label>\n                <input type=\"text\" id=\"CompanyName\" class=\"form-control\">\n              </div>\n            <div class=\"form-group\">\n              <label for=\"ContactName\">Contact Email</label>\n              <input type=\"text\" id=\"ContactName\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"CustomerPhone\">Contact Phone</label>\n              <input type=\"text\" id=\"CustomerPhone\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"Postion\">Contact Position</label>\n              <input type=\"text\" id=\"Postion\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"Comment\">Comment</label>\n              <input type=\"text\" id=\"Comment\" class=\"form-control\">\n            </div>\n          </div>\n          <br>\n          <div class=\"submit\">\n            <button class=\"btn btn-primary\" type=\"submit\">Submit</button>\n         </div>\n         <div class=\"back\">\n            <button class=\"btn btn-primary\" (click)=\"onBackClick()\">Back</button>\n        </div>\n        </form>\n      </div>\n    </div>\n  </div>\n  "
+
+/***/ }),
+
+/***/ "./src/app/contact-info/contact-info.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/contact-info/contact-info.component.ts ***!
+  \********************************************************/
+/*! exports provided: ContactInfoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactInfoComponent", function() { return ContactInfoComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactInfoComponent = /** @class */ (function () {
+    function ContactInfoComponent(router) {
+        this.router = router;
+    }
+    ContactInfoComponent.prototype.ngOnInit = function () {
+    };
+    ContactInfoComponent.prototype.onBackClick = function () {
+        this.router.navigate(['/']);
+    };
+    ContactInfoComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contact-info',
+            template: __webpack_require__(/*! ./contact-info.component.html */ "./src/app/contact-info/contact-info.component.html"),
+            styles: [__webpack_require__(/*! ./contact-info.component.css */ "./src/app/contact-info/contact-info.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], ContactInfoComponent);
+    return ContactInfoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/existing-customer/existing-customer.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/existing-customer/existing-customer.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".submit{\r\n    position: absolute;\r\n    left: 80%;\r\n}\r\n\r\n.back{\r\n    position: absolute;\r\n    left: 10%\r\n}\r\n\r\np{\r\n    text-align: center;\r\n    font-size: 20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhpc3RpbmctY3VzdG9tZXIvZXhpc3RpbmctY3VzdG9tZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG1CQUFtQjtJQUNuQixVQUFVO0NBQ2I7O0FBRUQ7SUFDSSxtQkFBbUI7SUFDbkIsU0FBUztDQUNaOztBQUNEO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtDQUNuQiIsImZpbGUiOiJzcmMvYXBwL2V4aXN0aW5nLWN1c3RvbWVyL2V4aXN0aW5nLWN1c3RvbWVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc3VibWl0e1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogODAlO1xyXG59XHJcblxyXG4uYmFja3tcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDEwJVxyXG59XHJcbnB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/existing-customer/existing-customer.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/existing-customer/existing-customer.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p><strong> *When dealing with a customer recently, you were able to spot an opportunity and informed the customer that you would let a sales Rep contact them</strong></p>\n<br>\n<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n        <form (ngSubmit)=\"onSubmit()\">\n          <div id=\"user-data\">\n              <div class=\"form-group\">\n                <label for=\"CompanyName\">Customer Company Name</label>\n                <input type=\"text\" id=\"CompanyName\" class=\"form-control\"\n                ngModel\n                name=\"CompanyName\">\n              </div>\n            <div class=\"form-group\">\n              <label for=\"ContactName\">Contact Name</label>\n              <input type=\"text\" id=\"ContactName\" class=\"form-control\" ngModel\n              name=\"ContactName\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"CustomerPhone\">Customer Phone</label>\n              <input type=\"text\" id=\"CustomerPhone\" class=\"form-control\" ngModel\n              name=\"CustomerPhone\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"email\">Customer Email</label>\n              <input type=\"email\" id=\"email\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"email\">Description</label>\n              <input type=\"text\" id=\"Description\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"Product\">Product</label>\n              <input type=\"text\" id=\"product\" class=\"form-control\">\n            </div>\n            <div  data-validate = \"Approve\">\n              <input type=\"checkbox\" name=\"Approve\" value=\"Approve\"> Approval<br>\n                  <!-- <span class=\"focus-input100\"></span> -->\n            </div>\n          </div>\n          <br>\n          <div class=\"submit\">\n            <button class=\"btn btn-primary\" type=\"submit\" false>Submit</button>\n         </div>\n         <div class=\"back\">\n            <button class=\"btn btn-primary\" (click)=\"onBackClick2()\">Back</button>\n        </div>\n        </form>\n      </div>\n    </div>\n  </div>\n  "
+
+/***/ }),
+
+/***/ "./src/app/existing-customer/existing-customer.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/existing-customer/existing-customer.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ExistingCustomerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExistingCustomerComponent", function() { return ExistingCustomerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ExistingCustomerComponent = /** @class */ (function () {
+    function ExistingCustomerComponent(router) {
+        this.router = router;
+    }
+    ExistingCustomerComponent.prototype.ngOnInit = function () {
+    };
+    ExistingCustomerComponent.prototype.onBackClick2 = function () {
+        this.router.navigate(['/']);
+    };
+    ExistingCustomerComponent.prototype.onSubmit = function () {
+        console.log("Submitted!");
+    };
+    ExistingCustomerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-existing-customer',
+            template: __webpack_require__(/*! ./existing-customer.component.html */ "./src/app/existing-customer/existing-customer.component.html"),
+            styles: [__webpack_require__(/*! ./existing-customer.component.css */ "./src/app/existing-customer/existing-customer.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], ExistingCustomerComponent);
+    return ExistingCustomerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/header/header.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/header/header.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n      <div class=\"navbar-header\">\n          <img src=\"assets/img/SellWithDell.png\" alt=\"Sell with Dell\" class=\"image-responsive\" width=\"auto\" height=\"45\">\n          <a class=\"navbar-brand\" href=\"#\"></a>\n      </div>\n\n      <ul class=\"nav nav-tabs navbar-right\">\n          <li role=\"presentation\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n            <a routerLink=\"/\">Home</a>\n          </li>\n          <li role=\"presentation\" routerLinkActive=\"active\">\n            <a routerLink=\"Account\">Account</a>\n          </li>\n          <li role=\"presentation\" routerLinkActive=\"active\">\n            <a routerLink=\"About\">About</a>\n          </li>\n      </ul>\n   </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "./src/app/header/header.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/header/header.component.ts ***!
+  \********************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeaderComponent = /** @class */ (function () {
+    function HeaderComponent() {
+    }
+    HeaderComponent.prototype.ngOnInit = function () {
+    };
+    HeaderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-header',
+            template: __webpack_require__(/*! ./header.component.html */ "./src/app/header/header.component.html"),
+            styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HeaderComponent);
+    return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home-page/home-page.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/home-page/home-page.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".boxed{\r\n    background-color: gainsboro;\r\n    margin:0 auto;\r\n    padding: 5%;\r\n    text-align: center;\r\n    \r\n}\r\n\r\n.container{\r\n    margin-left: 10%;\r\n    margin:0 auto;\r\n    display: table;\r\n    text-justify: newspaper;\r\n    padding: 1%\r\n}\r\n\r\n.card-footer{\r\n    padding: 3%;\r\n}\r\n\r\n.card{\r\n\r\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\r\n    display: table-cell;\r\n}\r\n\r\n.First{\r\n    margin:0 auto;\r\n    padding: 5%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS1wYWdlL2hvbWUtcGFnZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksNEJBQTRCO0lBQzVCLGNBQWM7SUFDZCxZQUFZO0lBQ1osbUJBQW1COztDQUV0Qjs7QUFFRDtJQUNJLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsZUFBZTtJQUNmLHdCQUF3QjtJQUN4QixXQUFXO0NBQ2Q7O0FBQ0Q7SUFDSSxZQUFZO0NBQ2Y7O0FBQ0Q7O0lBRUksNkVBQTZFO0lBQzdFLG9CQUFvQjtDQUN2Qjs7QUFFRDtJQUNJLGNBQWM7SUFDZCxZQUFZO0NBQ2YiLCJmaWxlIjoic3JjL2FwcC9ob21lLXBhZ2UvaG9tZS1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYm94ZWR7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBnYWluc2Jvcm87XHJcbiAgICBtYXJnaW46MCBhdXRvO1xyXG4gICAgcGFkZGluZzogNSU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBcclxufVxyXG5cclxuLmNvbnRhaW5lcntcclxuICAgIG1hcmdpbi1sZWZ0OiAxMCU7XHJcbiAgICBtYXJnaW46MCBhdXRvO1xyXG4gICAgZGlzcGxheTogdGFibGU7XHJcbiAgICB0ZXh0LWp1c3RpZnk6IG5ld3NwYXBlcjtcclxuICAgIHBhZGRpbmc6IDElXHJcbn1cclxuLmNhcmQtZm9vdGVye1xyXG4gICAgcGFkZGluZzogMyU7XHJcbn1cclxuLmNhcmR7XHJcblxyXG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcclxuICAgIGRpc3BsYXk6IHRhYmxlLWNlbGw7XHJcbn1cclxuXHJcbi5GaXJzdHtcclxuICAgIG1hcmdpbjowIGF1dG87XHJcbiAgICBwYWRkaW5nOiA1JTtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/home-page/home-page.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/home-page/home-page.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n        <div class=\"boxed\">\n            <h2 class=\"heading1\">Description of What is our aim</h2>\n            <br>\n        \n        </div>\n\n</div>\n<div class=\"container\">\n    <div class=\"container\">\n        <div class=\"container\">\n\n\n            <div class=\"row text-center\">\n                    \n                    \n                    <div class=\"col-lg-3 col-md-6 mb-4\">\n                    <div class=\"card\">\n                        <img class=\"card-img-top\" src=\"assets/img/ContactInfo.png\" alt=\"\" width=\"265\">\n                        <div class=\"card-body\">\n                        \n                        <p class=\"card-text\">Do you have contacts within one of our customers that can be added to that customer contact list?</p>\n                        </div>\n                        <div class=\"card-footer\">\n                        <a routerLink=\"/ContactInfo\" class=\"btn btn-primary\">Add connection info</a>\n                        </div>\n                    </div>\n                    </div>\n                \n\n                    <div class=\"col-lg-3 col-md-6 mb-4\">\n                    <div class=\"card\">\n                        <img class=\"card-img-top\" src=\"assets/img/enterprise.png\" alt=\"\" width=\"265\">\n                        <div class=\"card-body\">\n                        \n                        <p class=\"card-text\">Do you know of a potential customer that would be interested in being contacted by sales?</p>\n                        </div>\n                        <div class=\"card-footer\">\n                        <a routerLink=\"/NewCustomer\" class=\"btn btn-primary\">New Customers</a>\n                        </div>\n                    </div>\n                    </div>\n\n                    <div class=\"col-lg-3 col-md-6 mb-4\">\n                    <div class=\"card\">\n                        <img class=\"card-img-top\" src=\"assets/img/existing.png\"  alt=\"\" width=\"265\">\n                        <div class=\"card-body\">\n                        <br>\n                        <br>\n                        <p class=\"card-text\">Did you spot an opportunity with an existing customer?\n                            <br>\n                            <br>\n                            \n                            \n                        </p>\n                        </div>\n                        <div class=\"card-footer\">\n                        <a routerLink=\"/ExistingCustomer\" class=\"btn btn-primary\">Existing Customers</a>\n                        </div>\n                    </div>\n                    </div>\n    \n\n        </div>\n    </div>\n</div>\n</div>\n<!-- <div class=\"boxed2\">\n<div class=\"ContactInfo\">\n    <div class=\"button1\">\n            <button class=\"btn btn-primary\" >Contact Info</button>\n    </div>\n      \n</div>\n\n<div class=\"NewCustomer\">\n        <div class=\"button2\">\n                <button class=\"btn btn-primary\" >Contact Info</button>\n        </div>\n          \n    </div> -->\n"
+
+/***/ }),
+
+/***/ "./src/app/home-page/home-page.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/home-page/home-page.component.ts ***!
+  \**************************************************/
+/*! exports provided: HomePageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageComponent", function() { return HomePageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomePageComponent = /** @class */ (function () {
+    function HomePageComponent() {
+    }
+    HomePageComponent.prototype.ngOnInit = function () {
+    };
+    HomePageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-home-page',
+            template: __webpack_require__(/*! ./home-page.component.html */ "./src/app/home-page/home-page.component.html"),
+            styles: [__webpack_require__(/*! ./home-page.component.css */ "./src/app/home-page/home-page.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomePageComponent);
+    return HomePageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/new-customer/new-customer.component.css":
+/*!*********************************************************!*\
+  !*** ./src/app/new-customer/new-customer.component.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".submit{\r\n    position: absolute;\r\n    left: 80%;\r\n}\r\n\r\n.back{\r\n    position: absolute;\r\n    left: 10%\r\n}\r\n\r\n.p1{\r\n    text-align: center;\r\n    font-size: 20px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmV3LWN1c3RvbWVyL25ldy1jdXN0b21lci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksbUJBQW1CO0lBQ25CLFVBQVU7Q0FDYjs7QUFFRDtJQUNJLG1CQUFtQjtJQUNuQixTQUFTO0NBQ1o7O0FBQ0Q7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0NBQ25CIiwiZmlsZSI6InNyYy9hcHAvbmV3LWN1c3RvbWVyL25ldy1jdXN0b21lci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnN1Ym1pdHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDgwJTtcclxufVxyXG5cclxuLmJhY2t7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBsZWZ0OiAxMCVcclxufVxyXG4ucDF7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/new-customer/new-customer.component.html":
+/*!**********************************************************!*\
+  !*** ./src/app/new-customer/new-customer.component.html ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p class=\"p1\"><strong> *Please provide information on any potential customers that you know would be interested in being contacted by our sales team</strong></p>\n<br>\n<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n        <form>\n          <div id=\"user-data\">\n              <div class=\"form-group\">\n                <label for=\"CompanyName\">Customer Company Name</label>\n                <input type=\"text\" id=\"CompanyName\" class=\"form-control\">\n              </div>\n            <div class=\"form-group\">\n              <label for=\"ContactName\">Contact Name</label>\n              <input type=\"text\" id=\"ContactName\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"CustomerPhone\">Contact Phone</label>\n              <input type=\"text\" id=\"CustomerPhone\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"email\">Contact Email</label>\n              <input type=\"email\" id=\"email\" class=\"form-control\">\n            </div>\n            <div class=\"form-group\">\n              <label for=\"email\">Description</label>\n              <input type=\"text\" id=\"Description\" class=\"form-control\">\n            </div>\n            <div class=\"row\">\n              <div class=\"column\">\n              <div  data-validate = \"Approve\">\n                <input type=\"checkbox\" name=\"Approve\" value=\"Approve\"> Approval<br>\n                    <!-- <span class=\"focus-input100\"></span> -->\n              </div>\n              </div>\n              <div class=\"column\">\n                <p>(Customer agreed to be contacted by Dell Sales)</p>\n              </div>\n            </div>\n          </div>\n          <br>\n          \n          <div class=\"submit\">\n            <button class=\"btn btn-primary\" type=\"submit\">Submit</button>\n         </div>\n         <div class=\"back\">\n            <button  class=\"btn btn-primary\" (click)=\"onBackClick()\">Back</button>\n        </div>\n        </form>\n      </div>\n    </div>\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/new-customer/new-customer.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/new-customer/new-customer.component.ts ***!
+  \********************************************************/
+/*! exports provided: NewCustomerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewCustomerComponent", function() { return NewCustomerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NewCustomerComponent = /** @class */ (function () {
+    function NewCustomerComponent(router) {
+        this.router = router;
+    }
+    NewCustomerComponent.prototype.ngOnInit = function () {
+    };
+    NewCustomerComponent.prototype.onBackClick = function () {
+        this.router.navigate(['/']);
+    };
+    NewCustomerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-new-customer',
+            template: __webpack_require__(/*! ./new-customer.component.html */ "./src/app/new-customer/new-customer.component.html"),
+            styles: [__webpack_require__(/*! ./new-customer.component.css */ "./src/app/new-customer/new-customer.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+    ], NewCustomerComponent);
+    return NewCustomerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+var environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.error(err); });
+
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0 ./src/main.ts ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\ellamm\Documents\Angular Projects\SalesLeads\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0 */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0");
+module.exports = __webpack_require__(/*! C:\Users\ellamm\Documents\Angular Projects\SalesLeads\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map

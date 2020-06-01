@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label for="Customers">Choose between Existing or New potential customers</label>
+  <select id="Customers" class="form-control" ngModel name="Customer" (change)="ChangeView($event.target.value)" [(ngModel)]="selectedNav" required>
+    <option [value]="'New Customer'" ngValue="New Customer">New Customer</option>
+    <option [value]="'Existing Customer'" ngValue="Existing Customer">Existing Customer</option>
+    <!-- <option ngValue="Customer">Customer2</option> -->
+  </select>
+
+</div>
+

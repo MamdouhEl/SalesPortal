@@ -1,0 +1,75 @@
+
+<nav class="navbar">
+
+  <div *ngIf="!userIsAuthenticated" class="container-fluid">
+      <!-- <div class="navbar-header"> -->
+          <!-- <span>
+              <img src="assets/img/Background.png" alt="Sell with Dell" class="image-responsive" width=100% height=100%>
+            <a class="navbar-brand" href="#"></a>
+          </span> -->
+      <!-- </div> -->
+      <!-- <span class="spacer">
+        <p *ngIf="authService.Adminuser"><strong>Admin</strong></p>
+        <p *ngIf="userIsAuthenticated">Logged in as {{ authService.username }}</p> -->
+
+
+      <!-- </span> -->
+
+
+      <ul class="nav navbar-nav navbar-right">
+          <li role="presentation" routerLinkActive="active">
+              <a routerLink="login">Login</a>
+          </li>
+          <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/">Home</a>
+          </li>
+          <!-- <li *ngIf="userIsAuthenticated" role="presentation" routerLinkActive="active">
+            <a *ngIf="!authService.Adminuser" routerLink="Account">Account</a>
+            <a *ngIf="authService.Adminuser" routerLink="AdminAccount">Admin</a>
+          </li> -->
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="About" color="white">About</a>
+          </li>
+          <!-- <li *ngIf="userIsAuthenticated" (click)="onLogout()" role="presentation" routerLinkActive="active">
+              <a routerLink="/login" color="white">logout</a>
+          </li> -->
+      </ul>
+   </div>
+   <div *ngIf="userIsAuthenticated" class="container-fluid" >
+      <!-- <div class="navbar-header"> -->
+          <!-- <span>
+              <img src="assets/img/Background.png" alt="Sell with Dell" class="image-responsive" width=100% height=100%>
+            <a class="navbar-brand" href="#"></a>
+          </span> -->
+      <!-- </div> -->
+
+
+
+
+
+
+
+      <ul class="nav navbar-nav navbar-right">
+          <li *ngIf="!userIsAuthenticated" role="presentation" routerLinkActive="active" style='background-color: brown;'>
+              <a routerLink="login"><p color="white">Login</p></a>
+          </li>
+          <li role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a routerLink="/"><p color="white">Home</p></a>
+          </li>
+          <li *ngIf="userIsAuthenticated" role="presentation" routerLinkActive="active">
+            <a routerLink="Account" style="color: white;">Account</a>
+
+          </li>
+          <li *ngIf="userIsAuthenticated" role="presentation" routerLinkActive="active">
+            <a *ngIf="authService.Adminuser" routerLink="AdminAccount">Admin</a>
+          </li>
+
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="About" color="white">About</a>
+          </li>
+          <li *ngIf="userIsAuthenticated" (click)="onLogout()" role="presentation" routerLinkActive="active">
+              <a routerLink="/login" color="white">logout</a>
+          </li>
+      </ul>
+   </div>
+</nav>

@@ -1,0 +1,72 @@
+<app-alert *ngIf="ShowDisclaimer" (close)="onDisclaimer()" style="position: center"></app-alert>
+<p class="p1"><strong> *Please select a customer from the dropdown list and share any contacts you may have</strong></p>
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form-group">
+                <label for="Customers">Customers list</label>
+                <select id="Customers" class="form-control" ngModel name="Customer" [(ngModel)]="selectedNav" required>
+                  <option [value]="customer.Customername" *ngFor="let customer of Customers" ngValue="customer.CustomerName">{{customer.Customername.charAt(0).toUpperCase()+customer.Customername.slice(1)}}</option>
+                  <option>Other</option>
+                  <!-- <option ngValue="Customer">Customer2</option> -->
+                </select>
+
+              </div>
+          <div id="user-data">
+              <div *ngIf="selectedNav === 'Other'" class="form-group">
+                  <label for="CustomerCompany">Customer Company</label>
+                  <input type="text" id="CustomerCompany" class="form-control" ngModel name="CustomerCompany" required>
+                </div>
+            <div class="form-group">
+                <label for="ContactName">Full Contact Name</label>
+                <input type="text" id="ContactName" class="form-control" ngModel name="ContactName" required>
+              </div>
+            <div class="form-group">
+              <label for="ContactEmail">Contact Email</label>
+              <input type="email" id="ContactEmail" class="form-control" ngModel
+               name="ContactEmail" #email="ngModel" required email>
+              <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+            </div>
+
+            <div class="form-group">
+              <label for="CustomerPhone">Contact Phone</label>
+              <input type="number" maxlength="11" minlength="11" id="CustomerPhone" class="form-control" ngModel name="ContactPhone" #number="ngModel" required>
+              <span class="help-block" *ngIf="!number.valid && number.touched">Please enter a valid email!</span>
+            </div>
+            <div class="form-group">
+              <label for="Postion">Contact Position</label>
+              <input type="text" id="Postion" class="form-control" ngModel name="ContactPosition" required>
+            </div>
+            <div class="form-group">
+              <label for="Comment">Comment</label>
+              <input type="text" maxlength="150" id="Comment" class="form-control" ngModel name="Comment" required>
+            </div>
+            <div  selection-model
+            selection-model-type="'checkbox'"
+            selection-model-mode="'multiple-additive'"
+            selection-model-selected-class="'foobar'">
+              <input type="checkbox" name="Approve" (change)="approve = !approve" ngModel required> Approval (Customer agreed to be contacted by Dell Sales)<br>
+                  <!-- <span class="focus-input100"></span> -->
+            </div>
+
+            <div  selection-model
+            selection-model-type="'checkbox'"
+            selection-model-mode="'multiple-additive'"
+            selection-model-selected-class="'foobar'">
+              <input type="checkbox" name="Accept" (change)="Accept = !Accept" ngModel required> Accept <button class="ButtonLink" (click)=onView()> Terms and Conditions</button><br>
+                  <!-- <span class="focus-input100"></span> -->
+            </div>
+          </div>
+          <br>
+          <div class="submit">
+            <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
+         </div>
+         <div class="back">
+            <button class="btn btn-primary" (click)="onBackClick()">Back</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
